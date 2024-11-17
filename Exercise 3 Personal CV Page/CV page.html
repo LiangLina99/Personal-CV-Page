@@ -1,0 +1,403 @@
+<!doctype html>
+
+<html>
+	
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+	
+	
+<meta charset="UTF-8">
+<title>Personal CV Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="styles.css">
+	
+	<style type="text/css">
+		* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Funnel Display', sans-serif;
+}
+		
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+		body{
+			height: 100%;
+		}
+		h1 {
+    font-family: 'Edu AU VIC WA NT Pre', sans-serif;
+}
+	h3 {
+    font-family: 'Permanent Marker', sans-serif;
+}
+	
+		
+	.resume-container {
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+    grid-template-rows: auto 1fr auto;
+    max-width: 700px;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+		
+	.left-column {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+	.color-block {
+    background-color: #cce7f0;
+    height: 100px;
+}
+		
+	.photo-block {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: calc（100%-40%）; 
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+	
+	.photo-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}	
+		
+	.info-block {
+    background-color: #cce7f0;
+    padding: 22px;
+    margin-top: 150px;
+    font-size: 14px; 
+    line-height: 1.8; 
+}
+
+.info-block h3 {
+    font-size: 18px; 
+   font-weight: bold;
+    color: #333;
+    margin-bottom: 1px; 
+}
+
+		.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+.info-block ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+		
+.info-block p,
+.info-block ul {
+    margin-bottom: 6px;
+}
+
+.info-block ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+		
+	.right-column {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+		.section {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+		
+		.section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: #e0f7ff;
+    display: inline-block;
+}
+		
+		
+		
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.about-me,
+.experience,
+.education,
+.skills {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+		.light-text {
+  color: #717171;
+}
+		.skills-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-image {
+    width: 50px; 
+    height: 50px; 
+    object-fit: contain; 
+    border-radius: 5px; 
+    margin-bottom: 1px; 
+}
+		
+	.bottom-section {
+    width: 100%+40px; 
+		margin-left: -20px; 
+    background-color: #f5e6d8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    grid-column: 1 / -1; 
+		margin-top:auto;
+}
+
+.interest {
+    text-align: center;
+}
+
+.interest img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+		.margin10{
+            margin-left: 10px;
+        }
+        .text-div {
+           
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .text-div .text1 {
+            width: 215px;
+            padding: 5px;
+        }
+
+        .text-div .text2 {
+            padding: 5px;
+            width: 200px;
+            text-align: left;
+        }
+		</style> 
+
+</head>
+
+<body>
+	
+	<div class="resume-container">
+		<div class="left-column">
+			 <div class="color-block">
+			</div>
+             <div class="photo-block">
+				 <img src="IMG_9726_副本.jpg" title="horror" class="img-left" height="200" alt="Profile Photo"/>
+		  </div>
+			
+		 <div class="info-block">
+			 <h3>  </h3>
+ 			<p >  .</p>
+			 	<h3> </h3>
+			<hr>
+           <h3>PROFILE</h3>
+                    <div class="contact-item">
+      			<img src="电话.png" width="18" height="18" alt="电话"/>
+						<span class="margin10">+60 172093592</span>
+  				  </div>
+			 
+                     <div class="contact-item">
+        <img src="ins.png" width="18" height="18" alt="ins"/> <span class="margin10">1iang9_lln</span>
+    </div>
+			 
+            		<div class="contact-item">
+        <img src="email.png" width="18" height="18" alt="email"/> <span class="margin10">aquariuslily9@gmail.com</span>
+    </div>
+					<div class="contact-item">
+        <img src="shengri.png" width="18" height="18" alt="shengri"/> <span class="margin10">15 / 02 / 2002</span>
+    </div>
+			 
+		<hr> 
+		<h3>LANGUAGES</h3>
+		<ul>
+                <p>Cantonese</p>
+                <p>Mandarin</p>
+                <p>English</p>
+        </ul>
+	
+		<hr>	 
+		<h3>Project</h3>
+        <ul>
+                    <li>Brand Corporate Identity</li>
+					<li>Creative Brand Strategy</li>
+                    <li>Design Principles</li>
+                    <li>Information Design</li>
+                    <li>Publishing Design</li>
+                 	<li>Typography</li>
+        </ul>
+	</div>
+   </div>
+		
+		<div class="right-column">
+		<h1>Liang Lina</h1>
+        <h2>Student</h2>
+			
+		<hr>
+		<div class="about-me">
+                <h3>About me</h3>
+                <p class="light-text">I am from Guangzhou, China, I am a creative media design student majoring in graphic design. I hope I can be an independent designer with ideas. </p>
+       </div>
+			
+	<hr>	
+	<div class="experience">
+                <h3>Experience</h3>
+		<div class="experience-item">
+                <p>Film post-production 
+					<br>
+               <div class="text-div"><text class="text1">Guangzhou Frontop Co.Ltd</text><text class="text2">| 2023.09 - 2024.09</text></div>  
+			</p>
+			<ul class="experience-list">
+                <p class="light-text">Planning of digital content and video projects </p>
+				<p class="light-text">Planning of content for exhibitions in large showrooms</p>
+				<p class="light-text">Writing advertising copy and promotional materials </p>
+		  </ul>
+    </div>
+          </div>
+			
+			<hr>
+            <div class="education">
+                <h3>Education</h3>
+                <p>Bachelor's Degree
+					<br>
+                    <div class="text-div"><text class="text1">Taylor's University</text><text class="text2">| 2023 - Present</text></div>  
+                       </p>
+                <p>Junior College
+					<br>
+                    <div class="text-div"><text class="text1">Shanghai Printing Institute</text><text class="text2">| 2019 - 2022</text></div> 
+                     </p>
+            </div>
+			<!-- <div class="education">
+                <h3>Education</h3>
+                <p>Bachelor's Degree
+					<br>Taylor's University         | 2023 - Present</p>
+                <p>Junior College
+					<br>Shanghai Printing Institute | 2019 - 2022</p>
+            </div> -->
+			
+			<hr>	
+			<div class="skills-section">
+            	<h3>Skill</h3>
+            	<div class="skills-grid">
+        			<div class="skill-item">
+            			<img src="sskoo.com – 2.png" alt="Photoshop" class="skill-image">
+            			<p>Photoshop</p>
+       			</div>
+             		<div class="skill-item">
+            			<img src="sskoo.com – 3.png" alt="Illustrator"  class="skill-image">
+            			<p>Illustrator</p>
+        </div>
+                    <div class="skill-item">
+            <img src="sskoo.com – 6.png"  alt="Indesign"  class="skill-image">
+            <p>Indesign</p>
+        </div>
+                    <div class="skill-item">
+            <img src="sskoo.com – 12.png" alt="Lightroom"  class="skill-image">
+            <p>Lightroom</p>
+        </div>
+                   <div class="skill-item">
+            <img src="sskoo.com – 7.png" alt="After Effects"   class="skill-image">
+            <p>After Effects</p>
+        </div>
+<div class="skill-item">
+            <img src="sskoo.com – 11.png" alt="After Effects"   class="skill-image">
+            <p>Premiere Pro</p>
+       			 </div>
+            </div>
+		</div>
+			
+			
+
+ 
+</div>
+
+<div class="bottom-section">
+    <h3 class="interest-title">Interests</h3>
+       <div class="interest">
+           <p>📸 Photography</p>
+           <img src="Olympus PEN-F Announced _ Wex Photo Video.jpeg" width="590" height="443" alt=""/>
+       </div>
+    
+       <div class="interest">
+            <p>🎹 Pianos</p>
+           <img src="Curso piano - Formación online _ Euroinnova.jpeg" width="626" height="417" alt=""/>
+       </div>
+    
+       <div class="interest">
+           <p>🤿 Dive</p>
+       <img src="Download premium image of Underwater beauty adventure sunlight swimming_ about diving sea, scuba dive, underwater photo, fishs underwater, and discovery explore 13923364.jpeg" width="735" height="490" alt=""/> 
+    </div>
+   </div>
+</div>
+	</body>
+</html>
